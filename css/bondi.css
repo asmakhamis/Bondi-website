@@ -1,0 +1,188 @@
+:root{
+    --bg-dark:#1b2940;
+    --bg-green:#31cfcc;
+    --btn-color:#ff3150;
+    --yellow-color:#ffb400;
+    --section-color:#eff7fa;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+}
+/* navbar */
+.navbar{
+    background-color: var(--bg-dark);
+}
+.navbar .navbar-nav .nav-link{
+    color: white;
+}
+.navbar .navbar-nav .nav-link.active,
+.navbar .navbar-nav .nav-link:focus,
+.navbar .navbar-nav .nav-link:hover{
+    color: var(--bg-green);
+}
+.navbar .search{
+    border-left: 1px solid var(--bg-green);
+
+}
+.navbar .search svg{
+    color: var(--bg-green);
+}
+.navbar .navbar-toggler{
+    color: white;
+    font-size: 20px;
+    border-color: white;
+}
+.navbar .navbar-toggler:focus{
+    box-shadow: none;
+    border-color: var(--bg-green);
+
+}
+.main-btn{
+    background-color: var(--btn-color);
+    color: var(--yellow-color);
+    padding: 0.5rem 1rem;
+    font-weight: bold;
+    outline: none;
+}
+.main-btn:focus,
+.main-btn:hover{
+    color: var(--yellow-color);
+    border-color: transparent;
+}
+.landing{
+    background-color: var(--bg-dark);
+    min-height: calc(100vh - 72px);
+}
+/* features */
+.main-title::after{
+    content: "";
+    position: absolute;
+    width: 130px;
+    height: 2px;
+    bottom: -20px;
+    left: 50%;
+    transform: translate(-50%);
+    -webkit-transform: translate(-50%);
+    -moz-transform: translate(-50%);
+    -ms-transform: translate(-50%);
+    -o-transform: translate(-50%);
+    background-color: var(--bg-green);
+}
+.features .icon-holder{
+    height: 200px;
+}
+.features .icon-holder svg{
+    left:50%;
+    transform: translate(-50%);
+    -webkit-transform: translate(-50%);
+    -moz-transform: translate(-50%);
+    -ms-transform: translate(-50%);
+    -o-transform: translate(-50%);
+}
+.features .feat h4{
+    color: var(--yellow-color);
+}
+.features .number{
+    font-size: 12rem;
+    color:var(--section-color) ;
+}
+.features .icon{
+    color: var(--bg-green);
+}
+/* our work */
+.our-work{
+    background-color: var(--section-color);
+}
+.our-work ul .active{
+    background-color: var(--btn-color);
+    color: var(--yellow-color);
+}
+.our-work ul li{
+      padding: 0.5rem 1rem;
+      cursor: pointer;
+
+}
+.our-work ul li:not(.active):hover{
+    color: var(--yellow-color);
+}
+.our-work .box{
+    padding: 5px;
+    overflow: hidden;
+    position: relative;
+}
+.our-work .box::before{
+    content: attr(data-work);
+    position: absolute;
+    background-color: rgb(109 218 216 / 69%);
+    width: calc(100% - 10px);
+    height: calc(100% - 10px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    color: white;
+    font-weight: bold;
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+    transform: translateY(calc(-100% - 5px));
+    -webkit-transform: translateY(calc(-100% - 5px));
+    -moz-transform: translateY(calc(-100% - 5px));
+    -ms-transform: translateY(calc(-100% - 5px));
+    -o-transform: translateY(calc(-100% - 5px));
+}
+.our-work .box:hover:before{
+    transform: translateY(0);
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+}
+/* blog */
+.blog .card{
+    border: none;
+}
+.subscribe{
+    background-color: var(--yellow-color);
+}
+.subscribe .input-email{
+    border: none;
+    border-bottom: 1px solid white;
+    
+}
+.subscribe .input-email:focus{
+    outline: none;
+}
+.subscribe .input-email::placeholder{
+    color: white;
+}
+.subscribe .sub-btn{
+    background-color: var(--bg-dark);
+    color: var(--yellow-color);
+}
+/* footer */
+.footer{
+    background-color: var(--bg-dark);
+}
+.footer .copy-right > span{
+    color: var(--bg-green);
+}
+ .footer .copy-right div span{
+    color: var(--yellow-color);
+ }
+/* footer */
+.footer .face{
+    background-color: #1877f2;
+}
+.footer .twit{
+    background-color: #1da1f2;
+}
+.footer .linked{
+    background-color: #0077b5;
+}
+.footer .yout{
+    background-color: #ff0000;
+}
+
